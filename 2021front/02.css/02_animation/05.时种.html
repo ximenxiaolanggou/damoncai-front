@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clock {
+            width: 1024px; /* 512*/
+            height: 1024px;
+            margin: 100px auto;
+            background: url("./images/bg3.jpg") no-repeat center center;
+            position: relative;
+        }
+        .second {
+            height: 450px;
+            width: 4px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 62px;
+            transform: translateX(-50%) ;
+            animation:run 60s infinite linear;
+            transform-origin: 2px bottom;
+
+        }
+
+        .minute {
+            height: 400px;
+            width: 6px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 112px;
+            transform: translateX(-50%) ;
+            animation:run 600s infinite linear;
+            transform-origin: 3px bottom;
+
+        }
+
+        .minute {
+            height: 350px;
+            width: 8px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 162px;
+            transform: translateX(-50%) ;
+            animation:run 216000s infinite linear;
+            transform-origin: 4px bottom;
+
+        }
+
+        @keyframes run {
+           from {
+               transform: rotateZ(0);
+           }
+            to {
+                transform: rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="clock">
+<!--    <div class="second"></div>-->
+    <div class="minute"></div>
+<!--    <div class="hour"></div>-->
+</div>
+</body>
+</html>

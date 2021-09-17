@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #showImg {
+        width: 400px;
+        height: 250px;
+    }
+    a img {
+        width: 96px;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="./images/1.jpg"><img src="./images/1-small.jpg" alt=""></a>
+            <a href="./images/2.png"><img src="./images/2-small.jpg" alt=""></a>
+            <a href="./images/3.jpg"><img src="./images/3-small.jpg" alt=""></a>
+            <a href="./images/4.jpg"><img src="./images/4-small.jpg" alt=""></a>
+        </div>
+        <div class="main">
+            <img id="showImg" src="./images/placeholder.png" alt="">
+        </div>
+    </div>
+</body>
+<script>
+    let aTags = document.querySelectorAll("a")
+    let showImg = document.querySelector("#showImg")
+    aTags.forEach(item => {
+        item.onclick = function () {
+            showImg.src = item.href;
+            //取消默认事件
+            return false;
+        }
+    })
+
+</script>
+</html>

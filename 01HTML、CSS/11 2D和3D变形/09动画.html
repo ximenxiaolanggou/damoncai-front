@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*动画名称 动画时间 运动曲线 合适开始 播放次数 是否反方向*/
+            animation: go 2s ease-in 0s infinite alternate; /*引用动画*/
+            /*
+            动画名称是自定义的
+            */
+        }
+        @keyframes go {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(600px);
+            }
+        }
+
+        div:hover {
+            animation-play-state:paused;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

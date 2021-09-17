@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    #left,#right {
+        width: 100px;
+        height: 200px;
+    }
+</style>
+<body>
+<select id="left" multiple>
+    <option>西瓜</option>
+    <option>哈密瓜</option>
+    <option>香蕉</option>
+    <option>葡萄</option>
+</select>
+<button id="btn1"><<</button>
+<button id="btn2"><</button>
+<button id="btn3">></button>
+<button id="btn4">>></button>
+<select id="right" multiple></select>
+</body>
+<script>
+    let leftEle = document.querySelector('#left')
+    let rightEle = document.querySelector('#right')
+    let btn4 = document.querySelector('#btn4');
+    btn4.onclick = function () {
+        for(let i = leftEle.children.length - 1 ; i >= 0 ; i--){
+            if(rightEle.length == 0){
+                rightEle.appendChild(leftEle.children[i])
+                continue;
+            }
+            rightEle.insertBefore(leftEle.children[i],rightEle.children[0])
+        }
+    }
+</script>
+</html>

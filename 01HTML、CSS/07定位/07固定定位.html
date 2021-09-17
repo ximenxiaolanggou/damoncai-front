@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            width: 1002px;
+            height: 1760px;
+            background: white url(images/box.png) 0 0 no-repeat;
+            margin: 100px auto;
+        }
+        .top {
+            width: 100%;
+            height: 100px;
+            background-color: pink;
+            /*固定定位一定要写宽和高，除非有内容撑开不用谢*/
+            position: fixed;
+            top: 0;
+        }
+        .fix-l {
+            height: 228px;
+            width: 120px;
+            position: fixed;
+            background: black url(images/ad-r.png) 0 0 no-repeat;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top"></div>
+    <div class="box"></div>
+    <div class="fix-l"></div>
+    <div class="fix-r"></div>
+</body>
+</html>

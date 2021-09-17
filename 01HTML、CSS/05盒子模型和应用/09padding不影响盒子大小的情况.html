@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            /*指定宽度 再设置padding-left，盒子会被撑大 不设置就不会影响盒子大小*/
+            width: 100%;
+            border: 1px solid red;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        nav {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+        }
+        p {
+            /*继承父亲的宽度/高度，则padding不会影响本盒子大小*/
+            padding-left: 20px;
+            padding-top: 40px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<!--
+    注意：
+        1.width和height属性仅适用于块级元素，对行内元素无效(img标签和input除外)
+        2.计算盒子模型的高度时，还应考虑连个盒子垂直外边距合并情况
+        3.如果一个盒子没有指定宽度和高度或者继承父亲的宽度/高度，则padding不会影响本盒子大小
+-->
+</body>
+<div>哈哈</div>
+<hr>
+<nav>
+    <p>嘻嘻</p>
+</nav>
+</html>

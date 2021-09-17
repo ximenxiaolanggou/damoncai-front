@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .par {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .son {
+            margin-top: 50px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+        .clearfix::before{
+            content: '';
+            display: table;
+        }
+
+        /*解决浮动和边框重合问题*/
+        /*.clearfix::before,*/
+        /*.clearfix::after{*/
+        /*    content: '';*/
+        /*    display: table;*/
+        /*    clear: both;*/
+        /*}*/
+    </style>
+</head>
+<body>
+
+<div class="par clearfix">
+    <div class="son"></div>
+</div>
+
+</body>
+</html>

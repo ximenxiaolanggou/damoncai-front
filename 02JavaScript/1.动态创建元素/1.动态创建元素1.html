@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>1111111</p>
+<button onclick="biu()">点击</button>
+<a id="ibangkf" href="http://www.ibangkf.com">客服网站</a>
+<script type="text/javascript" src="http://c.ibangkf.com/i/c-xxxzzzz123.js"></script>
+</body>
+<script>
+    /**
+     * 创建节点的方式：
+     *      1.document.write();
+     *      2.element.innerHTML;
+     *      3.document.createElement();
+     */
+
+
+    //动态创建元素 document.write()
+    document.write('<h1>haha</h1>')
+    //注意 放在方法中使用会重新创建页面覆盖之前的页面
+    function biu() {
+        document.write('<h1>xixi</h1>')
+    }
+</script>
+</html>

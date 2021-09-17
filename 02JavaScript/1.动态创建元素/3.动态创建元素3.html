@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .black {
+        color: black;
+    }
+</style>
+<body>
+<p>1111111</p>
+<div></div>
+<button onclick="biu()">点击</button>
+</body>
+<script>
+    //动态创建元素 document.createElement()
+    function biu() {
+        let pEle = document.createElement('p');
+        pEle.innerHTML = '大白';
+        pEle.style.color = 'pink';
+        let divEle = document.querySelector('div')
+        divEle.appendChild(pEle);
+    }
+</script>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        div:nth-child(2) {
+            background-color: red;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+    注意：
+        1.相对定位最重要的一点是，他可以通过偏移移动位置，但是原来的所占位置，继续占有
+        2.其次，每次移动的位置，是一自己的左上角为基点移动(相对于自己的来移动位置),
+            就是说，相对定位的盒子仍在标准流中，它后面的盒子仍以标准流方式对待它(相对定位不脱标)
+-->
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

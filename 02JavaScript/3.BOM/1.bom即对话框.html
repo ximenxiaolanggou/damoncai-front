@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="fun1()">alert</button>
+<button onclick="fun2()">prompt</button>
+<button onclick="fun3()">confirm</button>
+</body>
+<script>
+    //定义的全局变量都是属于window，都是window对象的属性
+   var age = 11;
+   function fun1() {
+       alert(window.age)
+   }
+    function fun2() {
+        var str = prompt('请输入名称','zhangsan');
+    }
+
+    function fun3() {
+        var flag = confirm('是否要删除？');
+    }
+</script>
+</html>

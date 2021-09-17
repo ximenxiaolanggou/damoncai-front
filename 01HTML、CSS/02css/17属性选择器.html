@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+       a[title] {
+           color: #00cccc;
+       }
+        input[type='text'] {
+            color: red;
+        }
+        div[class^='1'] {
+            color: #990000;
+        }
+       div[class$='2'] {
+           color: fuchsia;
+       }
+       div[class*='3'] {
+           color: antiquewhite;
+       }
+    </style>
+</head>
+<body>
+<!--
+    属性选择器：
+        1.E[attr]        存在attr属性即可
+        2.E[attr=val]    等于属性值
+        3.E[attr*=val]   存在attr属性任意位置即可
+        4.E[attr^=val]   存在attr属性开始位置即可
+        4.E[attr$=val]   存在attr属性结束位置即可
+-->
+<a href="" title="">点击我</a><br>
+<input type="text" value="Yonghuming">
+<input type="password" value="Mima">
+<div class="1font1">1font1</div>
+<div class="1font1">1font1</div>
+<div class="2font2">2font2</div>
+<div class="2font2">2font2</div>
+<div class="3font3">3font3</div>
+</ul>
+</body>
+</html>

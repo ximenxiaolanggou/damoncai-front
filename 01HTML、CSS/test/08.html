@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .main {
+        width: 600px;
+        height: 600px;
+        margin: 0px auto;
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        min-width: 650px;
+    }
+
+    .main div:first-child {
+        background-color: pink;
+        flex: 1;
+    }
+
+    .main div:nth-child(2) {
+        background-color: yellow;flex: 1;
+        margin: 0px 20px;
+
+    }
+
+    .main div:last-child {
+        background-color: greenyellow;
+        flex: 1;
+    }
+
+</style>
+<body>
+    <div class="main">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

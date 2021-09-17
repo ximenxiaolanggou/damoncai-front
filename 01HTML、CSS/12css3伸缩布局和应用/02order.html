@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section {
+            width: 900px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 100px auto;
+            display: flex;
+            /*最小宽度不再拉伸*/
+            min-width: 300px;
+            /*最大宽度不再拉伸*/
+            max-width: 1000px;
+        }
+        div {
+            height: 100%;
+            float: left;
+        }
+        div:nth-child(1) {
+            background-color: pink;
+            flex: 1;
+        }
+        div:nth-child(2) {
+            background-color: red;
+            margin: 0px 10px;
+            flex: 1;
+            order: -1;
+        }
+        div:nth-child(3) {
+            background-color: green;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: url("./images/te.png") no-repeat;
+            margin: 300px auto;
+            animation: te 2s steps(20) infinite;
+        }
+
+        @keyframes te {
+            0% {
+                background-position: 0px 0px;
+            }
+            25% {
+                background-position: -500px 0px;
+            }
+            26% {
+                background-position: 0px -100px;
+            }
+            50% {
+                background-position: -500px -100px;
+            }
+            51% {
+                background-position: 0px -200px;
+            }
+            75% {
+                background-position: -500px -200px;
+            }
+            76% {
+                background-position: 0px -300px;
+            }
+            100% {
+                background-position: -500px -300px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+
+</div>
+</body>
+</html>

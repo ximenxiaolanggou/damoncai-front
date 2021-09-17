@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            display: inline;
+        }
+        span {
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            display: block;
+        }
+        a {
+            width:200px;
+            height: 200px;
+            background-color: pink;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<!--
+    块级元素:
+        1.总是冲从新行开始
+        2.高度、行高、外边距以及内边距都可以控制
+        3.宽度默认容器的100%
+        4.可以容纳内联元素和其他块元素
+
+     行内元素特点：
+        1.和相邻的行内元素在一行上
+        2.高、宽无效，但水平方向的padding和margin可以设置，垂直方向的无效
+        3.默认宽度就是其本身内容的宽度
+        4.行内元素只能容纳文本或其他行内元素
+
+     行内块元素：
+        在行内元素中有几个特殊的标签 img、input、td，可以对其设置宽高和对其属性
+        特点：
+            1.和行内元素(行内块)在一行上，但是之间会有空白间隙
+            2.默认宽度就是本身内容的宽度
+            3.高度、行高、外边距以及内边距都可以控制
+-->
+
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+<hr>
+<span>span1</span>
+<span>span2</span>
+<span>span3</span>
+<hr>
+<a href="#">123</a>
+<a href="#">456</a>
+</body>
+</html>

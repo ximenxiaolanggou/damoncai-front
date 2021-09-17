@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 296px;
+            height: 180px;
+            margin: 200px auto;
+            position: relative;
+        }
+        div:hover::before {
+            content: '';
+            width: 296px;
+            height: 180px;
+            display: inline-block;
+            border: 5px solid rgba(255,255,255,.3);
+            position: absolute;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/mi.jpg" alt="">
+    </div>
+</body>
+</html>

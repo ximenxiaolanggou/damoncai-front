@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        position: absolute;
+    }
+</style>
+<body>
+<button onclick="move()">移动</button>
+<button onclick="stop()">停止</button>
+
+<div style="width: 100px;height: 100px;background-color: red;"></div>
+</body>
+<script>
+    let timerId;
+
+    function move(e) {
+        timerId = setInterval(go,100)
+    }
+
+    function go(e) {
+        let divEle = document.querySelector('div');
+        divEle.style.left = divEle.offsetLeft + 1 + 'px';
+    }
+
+    function stop() {
+        clearInterval(timerId)
+    }
+</script>
+</html>

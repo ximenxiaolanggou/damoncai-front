@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .contentBox {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*传统盒子大小为 width + padding + border  w3c标准*/
+            box-sizing: content-box;
+            padding: 20px;
+            border: 5px solid red;
+        }
+
+        .borderBox {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*盒子大小为 width 就是说 padding和border是包含到width里面的*/
+            box-sizing: border-box;
+            padding: 20px;
+            border: 5px solid red;
+        }
+    </style>
+</head>
+<body>
+<div class="contentBox"></div>
+<br>
+<div class="borderBox"></div>
+</body>
+</html>

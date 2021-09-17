@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .par {
+            border: 1px solid red;
+        }
+        .dev1 {
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            float: left;
+        }
+        .dev2 {
+            width: 600px;
+            height: 400px;
+            background-color: palegoldenrod;
+            float: left;
+        }
+        .last {
+            width: 100px;
+            height: 700px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+清除浮动主要为了解决父级元素因为子级浮动引起内部高度为0的问题
+-->
+<div class="par">
+    <div class="dev1"></div>
+    <div class="dev2"></div>
+</div>
+<div class="last"></div>
+</body>
+</html>

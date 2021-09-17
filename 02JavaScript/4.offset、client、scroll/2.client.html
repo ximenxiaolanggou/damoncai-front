@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        border: 10px solid red;
+        padding: 15px;
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+    }
+</style>
+<body>
+    <div>
+
+    </div>
+</body>
+<script>
+    let divEle = document.querySelector('div')
+    console.log('clientLeft',divEle.clientLeft)  //clientLeft 是border-left的宽度
+    console.log('clientTop',divEle.clientTop)    //clientTop 是border-top的宽度
+
+    // 获取大小 包括padding 但是不包括边框
+    console.log('clientTop',divEle.clientWidth)
+    console.log('clientTop',divEle.clientHeight)
+
+    //offsetWidth  offsetHeight  包括padding和边框
+</script>
+</html>

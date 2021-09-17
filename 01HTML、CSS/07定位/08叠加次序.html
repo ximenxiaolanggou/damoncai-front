@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        div:first-child {
+            background-color: pink;
+            z-index: 3;
+        }
+        div:nth-child(2) {
+            background-color: black;
+            margin: 20px;
+        }
+        div:last-child {
+            background-color: red;
+            margin: 40px;
+        }
+    </style>
+</head>
+<body>
+<!--
+z-index的默认值属性是0，值去越大，定位元素在层叠元素中越居上
+如果取值相同，则根据书写顺序，后来居上
+后面的数值一定不能加单位
+只有相对定位、绝对定位有此属性，其余标准浮动、静态定位都无此属性，亦不可指定此属性
+-->
+<div></div>
+<div></div>
+<div></div>
+</body>
+</html>

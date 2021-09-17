@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    let div1 = document.querySelector('div');
+    console.log('div1',div1)
+
+    /**
+     * onload 页面加载完成之后执行
+     * 页面加载完成 页面上所有的元素创建完毕，并且引用的外部资源下载完毕(js，css,图片)
+     */
+    window.onload = function () {
+        let div2 = document.querySelector('div');
+        console.log('div1',div2)
+    }
+</script>
+<body>
+    <div></div>
+</body>
+</html>

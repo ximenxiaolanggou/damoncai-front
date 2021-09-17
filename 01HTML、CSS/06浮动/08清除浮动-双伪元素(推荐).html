@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .par {
+            border: 1px solid red;
+        }
+        .dev1 {
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            float: left;
+        }
+        .dev2 {
+            width: 600px;
+            height: 400px;
+            background-color: palegoldenrod;
+            float: left;
+        }
+        .last {
+            width: 100px;
+            height: 700px;
+            background-color: red;
+        }
+
+        .par::after,.par:before {
+            content: "";
+            display: table;
+        }
+        .par::after {
+            clear: both;
+        }
+        .par {
+            *zoom: 1;
+        }
+
+    </style>
+</head>
+<body>
+<!--
+
+-->
+<div class="par">
+    <div class="dev1"></div>
+    <div class="dev2"></div>
+</div>
+<div class="last"></div>
+</body>
+</html>

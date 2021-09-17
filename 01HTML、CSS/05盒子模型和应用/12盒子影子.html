@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            margin: 50px auto;
+            border: 1px solid white;
+            width: 200px;
+            height: 200px;
+        }
+        div:hover {
+            /*box-shadow:水平位置、垂直位置、模糊距离、阴影尺寸(影子大小)、阴影颜色、内外(默认外)*/
+            box-shadow: 3px 3px 3px 3px rgba(0,0,0,.4) inset;
+        }
+
+        .div1 {
+            width: 200px;
+            height: 200px;
+            border: 10px solid red;
+            /* box-shadow: 5px 5px 3px 4px rgba(0, 0, 0, .4);  */
+            /* box-shadow:水平位置 垂直位置 模糊距离 阴影尺寸（影子大小） 阴影颜色  内/外阴影； */
+            box-shadow: 0 15px 30px  rgba(0, 0, 0, .4);
+
+        }
+    </style>
+</head>
+<body>
+    <div>hahha</div>
+    <div class="div1">hahha</div>
+</body>
+</html>

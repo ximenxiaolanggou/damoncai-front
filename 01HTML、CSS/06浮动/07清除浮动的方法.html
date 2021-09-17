@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .par {
+            border: 1px solid red;
+            overflow: hidden;
+        }
+        .dev1 {
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            float: left;
+        }
+        .dev2 {
+            width: 600px;
+            height: 400px;
+            background-color: palegoldenrod;
+            float: left;
+        }
+        .last {
+            width: 100px;
+            height: 700px;
+            background-color: red;
+        }
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<!--
+清除浮动的方式：
+    1.添加标签设置样式 clear:both
+    2.给父元素添加 overflow hidden|auto|scroll 都可以实现
+        缺点：内容增多时容易造成不会自动换行导致内容被隐藏，无法显示需要溢出的元素
+-->
+<div class="par">
+    <div class="dev1"></div>
+    <div class="dev2"></div>
+<!--    <div class="clear"></div>-->
+</div>
+<div class="last"></div>
+</body>
+</html>

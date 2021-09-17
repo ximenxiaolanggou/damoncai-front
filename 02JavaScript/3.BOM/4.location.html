@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="action">点击我</button>
+</body>
+<script>
+    function action() {
+        //href
+        console.log(location.href)
+        // location.href = 'http://www.baidu.com';
+        location.assign('http://www.baidu.com'); // 作用和href一样
+
+        //替换掉地址栏中的地址，但是不保存历史记录
+        location.replace('http://www.baidu.com');
+
+        //参数 true 强制从服务器获取页面(ctrl + f5)  false 如果浏览器有缓存的话直接从缓存中获取页面(f5)
+        location.reload(true);
+    }
+</script>
+</html>

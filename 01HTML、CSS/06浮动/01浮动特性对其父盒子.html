@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            height: 400px;
+            width: 500px;
+            background-color: pink;
+            border: 10px solid green;
+            padding: 10px;
+        }
+        .son {
+            /*浮动首先创建包含块的概念，就是说，浮动的元素总是找离他最近的父既元素对其。但是不能回超出内边距的范围*/
+            /*不会压住padding 和 margin*/
+            float: right;
+            height: 200px;
+            width: 250px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

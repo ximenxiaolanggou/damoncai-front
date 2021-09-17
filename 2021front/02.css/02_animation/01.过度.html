@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .par {
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+        }
+
+        .son1,.son2,.son3 {
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        .son2 {
+            background-color: blanchedalmond;
+        }
+        .son3 {
+            background-color: deeppink;
+        }
+
+        .par:hover .son1 {
+            width: 300px;
+            height: 300px;
+            transition: all 2s;
+        }
+        .par:hover .son2{
+            margin-left: 500px;
+            transition: all 2s;
+            transition-timing-function: linear;
+        }
+        .par:hover .son3{
+            margin-left: 500px;
+            transition: all 2s;
+            transition-timing-function: steps(2);
+        }
+        .tu {
+            width: 132px;
+            height: 271px;
+            background-image: url("./images/1.png");
+            transition: 1s steps(3);
+        }
+        .tu:hover {
+            background-position-x: -396px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="par">
+    <div class="son1">
+    </div>
+    <div class="son2">
+    </div>
+    <div class="son3">
+    </div>
+</div>
+<div class="tu">
+
+</div>
+</body>
+</html>

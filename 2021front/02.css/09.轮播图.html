@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        .lunbo{
+            position: relative;
+            border: 1px solid red;
+            height: 740px;
+            width: 590px;
+            margin: 100px auto;
+        }
+        .lunbo img {
+            display: block;
+            margin: 0px auto;
+            height: 100%;
+        }
+        .left,.right {
+            border: 1px solid red;
+            width: 38px;
+            height: 42px;
+            line-height: 42px;
+            background-color: rgba(244,244,244,.8);
+        }
+        .left{
+            position: absolute;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            top:0px;
+            bottom: 0px;
+            margin: auto 0;
+        }
+        .right{
+            position: absolute;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        span {
+            font-weight: bold;
+        }
+        .left span {
+            margin-left: 5px;
+        }
+        .right span {
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="lunbo">
+    <img src="./images/q.jpg">
+    <div class="left"><span>&lt;</span></div>
+    <div class="right"><span>&gt;</span></div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <button>设置</button>
+        <select>
+            <option value="1">上海</option>
+            <option value="2">广州</option>
+            <option value="3">南京</option>
+            <option value="4">背景</option>
+        </select>
+    </div>
+</body>
+<script>
+    let btn = document.querySelector('button');
+    let options = document.querySelectorAll('option');
+    btn.onclick = function(){
+        //1.生成1到4随机数
+        let num = Math.floor( Math.random() * 4 + 1);
+        //2.遍历选中
+        options.forEach(item => {
+            if(parseInt(item.value) === num){
+                item.selected = true;
+            }
+        })
+    }
+</script>
+</html>

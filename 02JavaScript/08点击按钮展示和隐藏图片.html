@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .display {
+        display: block;
+    }
+    .hidden {
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <button>隐藏</button>
+        <div>
+            <img class="display" src="./images/1.jpg" alt="">
+        </div>
+    </div>
+</body>
+<script>
+   var button = document.querySelector('button');
+   var img = document.querySelector('img');
+   let flag = true;
+   button.onclick = function(){
+       flag = !flag;
+       if(!flag){
+           button.innerHTML = '展示';
+           img.className = 'hidden';
+       }else{
+           button.innerHTML = '隐藏';
+           img.className = 'display';
+       }
+   }
+</script>
+</html>

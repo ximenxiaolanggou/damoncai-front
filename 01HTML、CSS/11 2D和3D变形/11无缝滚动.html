@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            width: 200%;
+            list-style: none;
+            animation: go 5s linear infinite;
+        }
+        div {
+            width: 882px;
+            height: 86px;
+            margin: 300px auto;
+            overflow: hidden;
+        }
+        ul li {
+            float: left;
+        }
+        @keyframes go {
+            from {
+                transform: translate3d(0,0,0);
+            }
+            to {
+                transform: translate3d(-882px,0,0);
+            }
+        }
+        div:hover ul {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><img src="images/nav1.jpg" alt=""></li>
+            <li><img src="images/nav2.jpg" alt=""></li>
+            <li><img src="images/nav3.jpg" alt=""></li>
+            <li><img src="images/nav4.jpg" alt=""></li>
+            <li><img src="images/nav5.jpg" alt=""></li>
+            <li><img src="images/nav6.jpg" alt=""></li>
+            <li><img src="images/nav7.jpg" alt=""></li>
+            <li><img src="images/nav1.jpg" alt=""></li>
+            <li><img src="images/nav2.jpg" alt=""></li>
+            <li><img src="images/nav3.jpg" alt=""></li>
+            <li><img src="images/nav4.jpg" alt=""></li>
+            <li><img src="images/nav5.jpg" alt=""></li>
+            <li><img src="images/nav6.jpg" alt=""></li>
+            <li><img src="images/nav7.jpg" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

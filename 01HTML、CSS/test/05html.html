@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #p1::first-letter {
+           font-size: 35px;
+            color: red;
+        }
+
+        #p2::first-line {
+            font-size: 35px;
+            color: red;
+        }
+
+        #p3::selection {
+            font-size: 35px;
+            color: red;
+        }
+
+        #p4::before {
+            content: '开始';
+            color: red;
+        }
+
+        #p4::after {
+            content: '结束';
+        }
+
+    </style>
+</head>
+<body>
+    <p id="p1">DamonCai</p>
+    <p id="p2">DamonCai</p>
+    <p id="p3">DamonCai</p>
+    <p id="p4">DamonCai</p>
+</body>
+</html>

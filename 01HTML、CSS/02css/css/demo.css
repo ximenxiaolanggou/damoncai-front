@@ -1,0 +1,12 @@
+.dev1 {
+    color: red;
+}
+
+.dev2 {
+    font: italic bold 35px '华文楷体';
+}
+
+.dev3 {
+    font-size: 52px;
+    text-shadow: 3px 3px 3px rgba(0,255,0,0.4);
+}

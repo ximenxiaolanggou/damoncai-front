@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<button onclick="fun()">点击</button>
+</body>
+<script>
+    let arr = ['damon','cai','query']
+    function fun() {
+        let divEle = document.querySelector("div")
+        let content = '<ul>'
+        arr.forEach(item => {
+            content += '<li>' + item + '</li>'
+        })
+        content += '</ul>'
+        divEle.innerHTML = content;
+        let liEles = document.querySelectorAll("li")
+        liEles.forEach(item => {
+            item.onmousemove = function () {
+                item.style.color = 'red';
+            }
+        })
+    }
+</script>
+</html>

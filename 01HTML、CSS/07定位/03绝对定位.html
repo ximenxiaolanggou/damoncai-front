@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        div:first-child {
+            background-color: red;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+1.绝对定位完全脱标，它不占有位置
+2.父亲没有定位，孩子以浏览器为基准点对齐
+-->
+    <div></div>
+    <div></div>
+</body>
+</html>

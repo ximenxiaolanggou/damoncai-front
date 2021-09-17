@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div style="width: 100px;height: 100px;background-color: red;"></div>
+</body>
+<script>
+    /**
+     * type可以获取事件的名称
+     * @type {HTMLUListElement}
+     */
+    let divEle = document.querySelector('div');
+    divEle.onclick = function (e) {
+        //获取的鼠标在浏览器的可视区域的坐标
+        console.log(e.clientX)
+        console.log(e.clientY)
+
+        //获取的鼠标在当前页面的位置
+        console.log(e.pageX)
+        console.log(e.pageY)
+    };
+</script>
+</html>

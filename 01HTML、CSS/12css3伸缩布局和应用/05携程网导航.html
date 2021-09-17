@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        body {
+            min-width: 320px;
+            max-width: 540px;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+        }
+        header img {
+            width: 100%;
+            height: 100px;
+        }
+        nav {
+            padding: 2px;
+        }
+        .par {
+            background-color: pink;
+            height: 90px;
+            border-radius: 5px;
+            display: flex;
+        }
+        .one {
+            border-left: 2px solid white;
+            flex: 1;
+        }
+        .one:first-child {
+            margin-left: 0px;
+        }
+        .two{
+            display: flex;
+            flex-direction: column;
+        }
+        .two a {
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            line-height: 45px;
+            flex: 1;
+        }
+        .two a:first-child {
+            border-bottom: 1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/ctrip.jpg" alt="">
+    </header>
+    <nav>
+        <div class="par">
+            <div class="one">1</div>
+            <div class="one two">
+                <a href="#">海外酒店特价酒店</a>
+                <a href="#">海外酒店特价酒店</a>
+            </div>
+            <div class="one two">
+                <a href="#">海外酒店特价酒店</a>
+                <a href="#">海外酒店特价酒店</a>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

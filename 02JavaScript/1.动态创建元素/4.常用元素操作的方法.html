@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="add('biubiubiu')">添加</button>
+<ul>
+    <li>11</li>
+    <li>22</li>
+    <li>33</li>
+</ul>
+</body>
+<script>
+    /**
+     * createElement()
+     * appendChild()
+     * removeChild()
+     * insertBefore() 把元素插入到页面的指定位置
+     * replaceChild() 把当前元素的标签进行替换
+     */
+    function add(arg){
+        let liEle = document.createElement('li');
+        let ulEle = document.querySelector('ul')
+        liEle.innerHTML = arg;
+        ulEle.insertBefore(liEle,ulEle.children[0])
+    }
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 120px;
+            height: 20px;
+            border: 1px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+<!--
+    text-overflow:clip | ellipsis
+    设置或者检索是否使用一个省略号(...)表示对象文本的溢出
+    clip:不显示省略标记(...)而是简单的裁剪
+    ellipsis:对象内文本溢出时显示省略号(...)
+    注意：一定首先强制一行内显示，再次和overflow属性搭配使用
+-->
+
+<div>my name is andy</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .par {
+            width: 200px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .son {
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            background-color: pink;
+        }
+        img {
+            position: absolute;
+            top: 0;
+            left: 210px;
+            display: none;
+        }
+        .son:hover+img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <div class="son">二维码</div>
+        <img src="images/erweima.png" alt="">
+    </div>
+</body>
+</html>

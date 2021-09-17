@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .par {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin: 100px 100px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .child {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        border: 10px solid yellow;
+        margin: 50px auto;
+    }
+</style>
+<body>
+    <div class="par">
+        <div class="child"></div>
+    </div>
+</body>
+<script>
+    let parEle = document.querySelector('.par');
+    parEle.onclick = function (e) {
+        console.log('offsetLeft',parEle.offsetLeft)
+        console.log('offsetTop',parEle.offsetTop)
+        console.log('offsetParent',parEle.offsetParent)
+    }
+
+    let childEle = document.querySelector('.child');
+    childEle.onclick = function (e) {
+        //ofsetParent 获取距离当前元素最近的定位父元素，如果没有定位父元素此时是body
+        console.log('offsetParent',childEle.offsetParent)
+        //获取child的位置 offsetLeft 距离offsetParent的横向偏移
+        console.log('offsetLeft',childEle.offsetLeft)
+        console.log('offsetTop',childEle.offsetTop)
+        //获取child的大小，包括边框和padding
+        console.log('offsetWidth',childEle.offsetWidth)
+        console.log('offsetHeight'
+            ,childEle.offsetHeight)
+
+        e.stopPropagation()
+    }
+</script>
+</html>

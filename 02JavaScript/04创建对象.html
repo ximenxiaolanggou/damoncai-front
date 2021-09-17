@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    //创建对象的方式
+    //1. 字面量方式
+    let person_1 = {name:'张三'}
+
+    //2. new Object
+    let person_2 = new Object();
+    person_2.name = 'zhangsan';
+
+    //3.通过方法返回值
+    function createPerson(name='张三',age) {
+        return {name,age:'11'}
+    }
+
+    //4.构造方法
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    console.log(new Person('haha',12))
+
+</script>
+</html>

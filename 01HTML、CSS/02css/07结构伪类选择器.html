@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .div01 li:nth-child(2) {
+            color: red;
+        }
+
+        .div02 li:nth-child(odd) {
+            /*
+            even 表示偶数 odd 表示奇数
+            也可以用表达式 2n 操作   n 是 0,1,2,3,4...
+            */
+            color: red;
+        }
+
+        .div03 li:nth-last-child(odd) {
+            /*从下往上数*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="div01">
+   <ui>
+       <div>111111</div>
+       <li>child01</li>
+       <li>child02</li>
+       <li>child03</li>
+       <li>child04</li>
+       <li>child05</li>
+   </ui>
+</div>
+<hr/>
+<div class="div02">
+    <ui>
+        <li>child01</li>
+        <li>child02</li>
+        <li>child03</li>
+        <li>child04</li>
+        <li>child05</li>
+    </ui>
+</div>
+<hr/>
+<div class="div03">
+    <ui>
+        <li>child01</li>
+        <li>child02</li>
+        <li>child03</li>
+        <li>child04</li>
+        <li>child05</li>
+    </ui>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        background-color: darkgray;
+    }
+    div {
+        color: darkgray;
+        font: 700 100px '微软雅黑';
+    }
+    div:first-child {
+        /* text-shadow: 水平位置  垂直位置  模糊距离 阴影颜色; */
+        text-shadow: 1px 1px 1px #000,-1px -1px 1px white;
+    }
+    div:nth-child(2) {
+        /* text-shadow: 水平位置  垂直位置  模糊距离 阴影颜色; */
+        text-shadow: 1px 1px 1px white,-1px -1px 1px #000;
+    }
+</style>
+<body>
+<div>我是凸文字</div>
+<div>我是凹文字</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .par {
+        border: 1px solid red;
+        width: 600px;
+        height: 600px;
+        margin: 20px auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .par div {
+        height: 200px;
+        width: 150px;
+        border: 1px solid pink ;
+    }
+    .par div:nth-child(1) {
+        background-color: yellow;
+        flex: 1;
+    }
+    .par div:nth-child(2) {
+        background-color: pink;
+        flex: 2;
+    }
+    .par div:nth-child(3) {
+        background-color: darkorange;
+        flex: 1;
+    }
+</style>
+<body>
+
+<div class="par">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+</div>
+</body>
+</html>

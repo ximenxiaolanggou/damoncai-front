@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .top,.banner,.main,.submain,.footer{
+            background-color: #eee;
+            text-align: center;
+            border: 1px dashed #ccc;
+            margin: 0px auto 10px;
+        }
+        .top {
+            height: 80px;
+        }
+        .banner {
+            height: 150px;
+            width: 960px;
+        }
+        .main {
+            height: 120px;
+            width: 960px;
+            border: 0px;
+            background-color: white;
+        }
+        .submain {
+            height: 250px;
+            width: 960px;
+            border: 0px;
+            background-color: white;
+        }
+        .footer {
+            height: 200px;
+        }
+        ul {
+            list-style: none;
+        }
+        .main ul li {
+            height: 120px;
+            width: 232.5px;
+            float: left;
+            margin: 0px 5px;
+            background-color: #eee;
+        }
+        .main .main_one {
+            margin-left: 0px;
+        }
+        .main .main_four {
+            margin-right: 0px;
+            float: right;
+        }
+
+        .submain ul li {
+            height: 250px;
+            width: 232.5px;
+            float: left;
+            margin: 0px 5px;
+            background-color: #eee;
+        }
+        .submain .main_one {
+            margin-left: 0px;
+        }
+        .submain .main_four {
+            margin-right: 0px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="top">top</div>
+        <div class="banner">banner</div>
+        <div class="main">
+            <ul>
+                <li class="main_one">one</li>
+                <li>two</li>
+                <li>three</li>
+                <li class="main_four">four</li>
+            </ul>
+        </div>
+        <div class="submain">
+            <ul>
+                <li class="main_one">one</li>
+                <li>two</li>
+                <li>three</li>
+                <li class="main_four">four</li>
+            </ul>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

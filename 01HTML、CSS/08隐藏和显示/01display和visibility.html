@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    div {
+        width: 100px;
+        height: 100px;
+    }
+    div:first-child {
+        background-color: pink;
+        display: none;
+        /* visibility: hidden; */
+    }
+    div:last-child {
+        background-color: yellow;
+    }
+</style>
+<body>
+
+<!--
+    display:block  display:none 特点：隐藏之后不再保留位置
+    visibility:hidden  visibility:visiable 特点：隐藏之后继续保留位置
+-->
+
+<div>123</div>
+<div>321</div>
+</body>
+</html>

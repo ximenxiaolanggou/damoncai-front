@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .red {
+        color: red;
+    }
+
+    .black {
+        color: black;
+    }
+</style>
+<body>
+<p>1111111</p>
+<div></div>
+<button onclick="biu()">点击</button>
+</body>
+<script>
+    let arr = ['haha','xixi','dada']
+    //动态创建元素 element.innerHTML; 使用innerHTML每次都会重绘
+
+    //1.先创建节点再绑定事件
+    function biu() {
+        let divEle = document.querySelector('div');
+        let content = '<ul>'
+        arr.forEach(item => {
+            content += `<li>${item}</li>`;
+        })
+        content += '</ul>';
+        divEle.innerHTML = content;
+        let lis = document.querySelectorAll('li');
+        lis.forEach(item => {
+            item.onmouseover = function () {
+                item.className = 'red';
+            };
+            item.onmouseleave = function () {
+                item.className = 'black';
+            };
+        })
+    }
+</script>
+</html>

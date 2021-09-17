@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*
+                 translate(x,y)水平方向和垂直方向同时移动（也就是X轴和Y轴同时移动）
+                 translateX(x)仅水平方向移动（X轴移动）
+                 translateY(Y)仅垂直方向移动（Y轴移动）
+            */
+            /* transform:translate(50%,50%);走的自己的一半 */
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform:translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

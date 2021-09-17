@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
+        .par {
+            width: 520px;
+            height: 280px;
+            position: relative;
+            margin: 200px auto;
+        }
+        .move-l,.move-r {
+            position: absolute;
+        }
+        .move-l {
+            left: 0px;
+            top: 50%;
+            margin-top: -18px;
+        }
+        .move-r {
+            right: 0px;
+            top: 50%;
+            margin-top: -18px;
+        }
+        ul {
+            width: 65px;
+            height: 13px;
+            background-color: rgba(0,0,0,0.4);
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            margin-left: -32px;
+            border-radius: 6.5px;
+        }
+        ul li {
+            width: 9px;
+            height: 9px;
+            background-color: pink;
+            float: left ;
+            margin: 2px;
+            border-radius: 50%;
+        }
+        ul li:first-child {
+            margin-left: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="par">
+        <img src="images/taobao.jpg" alt="">
+        <div class="move-l"><a href="#"><img src="images/left.png" alt=""></a></div>
+        <div class="move-r"><a href="#"><img src="images/right.png" alt=""></a></div>
+        <div class="under">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

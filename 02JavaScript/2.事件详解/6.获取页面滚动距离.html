@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        height: 1000px;
+        width: 2000px;
+    }
+</style>
+<body>
+</body>
+<script>
+    document.onclick = function () {
+        console.log(document.body.scrollLeft)
+        console.log(document.body.scrollTop)
+
+        //有些浏览器是使用这两个属性来获取的 但存在兼容性问题
+        console.log(document.documentElement.scrollLeft)
+        console.log(document.documentElement.scrollTop)
+    }
+</script>
+</html>

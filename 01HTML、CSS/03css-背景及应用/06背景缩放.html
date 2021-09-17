@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            background-image: url(images/1.jpg);
+            background-repeat: no-repeat; /* repeat-x 和 repeat-y*/
+
+            /*
+            宽值 高值 建议只设置一个防止失贞
+             */
+            /*background-size: 150px 200px;*/
+            /*background-size: 50%;*/
+
+            /*
+            cover:会自动调整缩放比例，保证图片始终填充满背景区域，如果溢出部分则会被隐藏
+                  图片进行等比例缩放，图片一定保证宽度和高度同时满足盒子的大小
+                  势必会有部分超出去，就看不见了
+             */
+            /*background-size: cover;*/
+
+            /*
+            contain:会自动调整缩放比例,保证图片始终完整显示在背景区域
+                    图片进行等比例缩放 如果图片的高度或者宽度有一个和盒子一样大，就不在缩放
+                    这样的好处就是保证了图片的完整性，不会缺失一部分，但是部分会裸露出来
+             */
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

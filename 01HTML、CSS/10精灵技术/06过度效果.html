@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /*transition：要过度的属性  花费时间  运动曲线  合适开始*/
+            /*transition:过度的意思，这句话写在div里面而不是hover里面
+                linear:匀速
+                ease：逐渐慢下来
+                ease-in：加速
+                ease-out:减速
+                ease-in-out先加速后减速
+            */
+            transition: width 0.6s ease 0s,height 0.6s ease 0s;
+            /*transition: 所有属性都变化用all就可以了，后面连个属性可以省略*/
+            /*transition: all 0.6s;*/
+    }
+    div:hover {
+        width: 400px;
+        height: 400px;
+    }
+</style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

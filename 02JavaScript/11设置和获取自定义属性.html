@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div></div>
+</body>
+<script>
+    let div = document.querySelector('div');
+    //1.设置自定义属性
+    div.setAttribute('name','ximen');
+    div.setAttribute('age','12');
+    //2.获取属性
+    console.log(div.getAttribute('name'))
+    console.log(div.getAttribute('age'))
+    //3.移除属性
+    div.removeAttribute('age')
+</script>
+</html>

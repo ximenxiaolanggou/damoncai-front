@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section {
+            width: 900px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 100px auto;
+            display: flex;
+            justify-content: space-around; /**/
+            /*
+            justify-content: flex-start; 让子元素从父容器的开头开始排序，但是盒子顺序不变
+            justify-content: flex-end;   让子元素从父容器的结尾开始排序，但是盒子顺序不变
+            justify-content: center;     让子元素在父容器中间显示
+            justify-content: space-between;     左右盒子贴近父盒子，中间的平均分布空白间隙
+            justify-content: space-around;     各个子元素左右留有空白，相当于加了左右margin
+            */
+
+            align-items: flex-start; /*上对其*/
+            align-items: flex-end;/*下对其*/
+            align-items: center;/*垂直居中*/
+            align-items: stretch;/*让子元素的高度拉伸适用父元素容器，相当于 height 100% */
+        }
+        div {
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        div:nth-child(1) {
+            background-color: pink;
+        }
+        div:nth-child(2) {
+            background-color: red;
+        }
+        div:nth-child(3) {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+</body>
+</html>

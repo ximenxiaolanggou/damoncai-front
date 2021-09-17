@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+        每个元素(标签)贡献值    0,0,0,0
+        每个类，伪类贡献值      0,0,1,0
+        每个ID贡献值           0,1,0,0
+        每个行内样式贡献值      1,0,0,0
+        每个 !important贡献值  无穷大
+         */
+        div {
+            color: orange!important;
+        }
+
+        #divid {
+            color: #0066cc;
+        }
+        :first-child {
+            color: #00cccc;
+        }
+
+        .div {
+            color: pink;
+        }
+
+        div {
+            font-size: 50px;
+            color: red;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div class="div" id="divid" style="color: greenyellow">div标签</div>
+</body>
+</html>

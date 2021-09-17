@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        p::first-letter { /*选择第一个字*/
+            color: red;
+            font-size: 50px;
+        }
+        p::first-line {/*选择第一行*/
+            font-style: italic;
+        }
+        p::selection {/*当我们选中文字的时候，可以变化的样式*/
+            color: aqua;
+        }
+        /*before和after在盒子div的内部前面或者后面插入内容*/
+        div::before {
+            content: '俺';
+        }
+        div::after {
+            content: '18了';
+        }
+    </style>
+</head>
+<body>
+<p>
+    实打实大所大师大师大所发生的根深蒂固水电费水电费 胜多负少防守打法胜多负少但是
+</p>
+<div>今年</div>
+</body>
+</html>

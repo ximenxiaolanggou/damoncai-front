@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+            background-image: url(images/1.jpg);
+            background-repeat: no-repeat; /* repeat-x 和 repeat-y*/
+            /*
+            1.利用方位名词 top bottom 来改变背景图片位置
+                a.默认是左上角
+                b.方位名词没有顺序，谁在前都可以
+                c.如果方位名词只写一个，另外一个默认为center
+            */
+            /*background-position: bottom right;*/
+            /*background-position: bottom;*/
+
+            /*
+            2.利用精确单位 第一个值是X坐标 第二个值是Y坐标 左上角为原点
+             */
+            /*background-position: 10px 30px;*/
+
+            /*
+            3.混搭使用
+             */
+            background-position: 30px center;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

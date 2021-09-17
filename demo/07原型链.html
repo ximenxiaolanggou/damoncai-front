@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(){
+
+    }
+    let p1 = new Person();
+    let p2 = new Person();
+
+    console.log(Person.prototype.__proto__ === Object.prototype)
+    console.log(Person.prototype === Object.prototype)
+    console.log(Person.prototype === p1.__proto__)
+    console.log(p1.__proto__ === p2.__proto__)
+</script>
+
+</body>
+</html>
