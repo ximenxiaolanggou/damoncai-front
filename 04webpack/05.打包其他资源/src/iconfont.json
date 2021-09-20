@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1037688",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "1472563",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "1766511",
+      "name": "符号-html",
+      "font_class": "html",
+      "unicode": "e6a0",
+      "unicode_decimal": 59040
+    },
+    {
+      "icon_id": "1980999",
+      "name": "箭头_右",
+      "font_class": "jiantou",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "7263879",
+      "name": "铃铛",
+      "font_class": "lingdang",
+      "unicode": "efdf",
+      "unicode_decimal": 61407
+    },
+    {
+      "icon_id": "11058856",
+      "name": "小程序",
+      "font_class": "xiaochengxu",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "17275812",
+      "name": "折线图",
+      "font_class": "zhexiantu",
+      "unicode": "e6a1",
+      "unicode_decimal": 59041
+    },
+    {
+      "icon_id": "17711779",
+      "name": "文件包",
+      "font_class": "wenjianbao",
+      "unicode": "e824",
+      "unicode_decimal": 59428
+    },
+    {
+      "icon_id": "20171406",
+      "name": "交换",
+      "font_class": "jiaohuan",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    }
+  ]
+}
