@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<body>
+</body>
+<script>
+    const CancelToken = axios.CancelToken;
+    let cancel;
+   const firstInstance = axios.create({
+       baseURL: 'https://api.apiopen.top',
+       timeout: 2000
+   })
+
+   firstInstance({
+       url: '/getJoke',
+       cancelToken: new CancelToken(function executor(c) {
+           // An executor function receives a cancel function as a parameter
+           cancel = c;
+       })
+   }).then(res => {
+       console.log(res.data)
+       document.write(JSON.stringify(res.data))
+   })
+    cancel()
+
+</script>
+</html>

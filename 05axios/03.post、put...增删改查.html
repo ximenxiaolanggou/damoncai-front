@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<body>
+    <button onclick="add()">添加</button>
+    <button onclick="modify()">修改</button>
+    <button onclick="remove()">删除</button>
+    <button onclick="search()">查询</button>
+</body>
+<script>
+    function add() {
+        axios.post(
+            'http://127.0.0.1:10000',
+            {name: 'damoncai',age: 12}
+        ).then(res => {
+            console.log(res)
+        })
+    }
+
+    function modify() {
+        axios.put(
+            'http://127.0.0.1:10000/1',
+            {name: 'damoncai',age: 12}
+        ).then(res => {
+            console.log(res)
+        })
+    }
+    function remove() {
+        axios.delete(
+            'http://127.0.0.1:10000/1',
+            {name: 'damoncai',age: 12}
+        ).then(res => {
+            console.log(res)
+        })
+    }
+
+    function search() {
+        axios.get(
+            'http://127.0.0.1:10000/1',
+        ).then(res => {
+            console.log(res)
+        })
+    }
+</script>
+</html>
