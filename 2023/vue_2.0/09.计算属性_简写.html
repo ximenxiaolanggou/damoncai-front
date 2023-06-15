@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+    <div id="root">
+        <input type="text" v-model="firstName"> <br/>
+        <input type="text" v-model="lastName"> <br/>
+        {{ funllName }}
+    </div>
+</body>
+<script type="text/javascript">
+    const vm = new Vue({
+        el: '#root',
+        data: {
+            firstName: 'zhang',
+            lastName: 'san'
+        },
+        methods: {
+
+        },
+        computed: {
+            funllName() {
+                return this.firstName + '-' + this.lastName
+            }
+        }
+    })
+</script>
+</html>

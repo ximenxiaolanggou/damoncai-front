@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+    <div id="root">
+        <input type="text" @keyup.enter="fun">
+    </div>
+</body>
+<script type="text/javascript">
+    const x = new Vue({
+        el: '#root',
+        data: {
+        },
+        methods: {
+            fun(e) {
+                console.log(e)
+            }
+        }
+    })
+</script>
+</html>

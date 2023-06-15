@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+    <div id="root">
+        <button v-on:click="fun1">点击我，不传参</button>
+        <button @click="fun2($event,666)">点击我，传参</button>
+    </div>
+</body>
+<script type="text/javascript">
+    const x = new Vue({
+        el: '#root',
+        data: {
+        },
+        methods: {
+            // 如果不传递参数，默认参数是Event
+            fun1(e) {
+                console.log(e)
+                console.log(e.target.innerHTML)
+            },
+            // 如果传递参数，Event就会丢失，如果想使用Event可以使用$event进行传参
+            fun2(e,agr) {
+                console.log(e)
+                console.log(e.target.innerHTML)
+                console.log(agr)
+            }
+        }
+    })
+</script>
+</html>

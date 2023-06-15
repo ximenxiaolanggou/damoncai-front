@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+<!-- 准备好一个容器-->
+<div id="root">
+    <h2>今天天气很{{ info }}</h2>
+    <button @click="changeWeather">切换天气</button>
+</div>
+</body>
+<script type="text/javascript">
+    Vue.config.productionTip = false //阻止 vue 在启动时生成生产提示。
+    const vm = new Vue({
+        el:'#root',
+        data:{
+            numbers:{
+                c:{
+                    d:{
+                        e:100
+                    }
+                }
+            }
+        },
+        watch:{
+            //监视多级结构中某个属性的变化
+            /* 'numbers.a':{
+					handler(){
+						console.log('a被改变了')
+					}
+				} */
+            //监视多级结构中所有属性的变化
+            numbers:{
+                deep:true,
+                handler(){
+                    console.log('numbers改变了')
+                }
+            }
+        }
+    });
+
+    vm.$watch('isHot',{
+        immediate:true, //初始化时让handler调用一下
+        //handler什么时候调用？当isHot发生改变时。
+        handler(newValue,oldValue){
+            console.log('isHot被修改了',newValue,oldValue)
+        }
+    })
+</script>
+</html>

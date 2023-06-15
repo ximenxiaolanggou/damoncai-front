@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+<!-- 准备好一个容器-->
+<div id="root">
+    <h2>欢迎来到{{name}}学习</h2>
+    <!-- 阻止默认事件（常用） -->
+    <a href="http://www.baidu.com" @click.prevent="showInfo">点我提示信息</a>
+    <!-- 阻止事件冒泡（常用） -->
+    <div class="demo1" @click="showInfo">
+        <button @click.stop="showInfo">点我提示信息</button>
+        <!-- 修饰符可以连续写 -->
+        <!-- <a href="http://www.atguigu.com" @click.prevent.stop="showInfo">点我提示信息</a> -->
+    </div>
+    <!-- 事件只触发一次（常用） -->
+    <button @click.once="showInfo">点我提示信息</button>
+</div>
+</body>
+<script type="text/javascript">
+    const x = new Vue({
+        el: '#root',
+        data: {
+        },
+        methods: {
+            showInfo(arg) {
+                console.log(arg)
+            }
+        }
+    })
+</script>
+</html>

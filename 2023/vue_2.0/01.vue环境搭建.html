@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+    <div id="root">
+        <h1>hello，{{name}}</h1>
+        <h1>age，{{age}}</h1>
+    </div>
+</body>
+<script type="text/javascript">
+    const x = new Vue({
+        el: '#root', // el用于指定当前Vue实例为哪个容器服务，通常为css选择器字符串，也可以使用 document.getElememtById...
+        data: {      // data中用于存储数据，供Vue挂载的容器去使用
+            name: 'scala',
+            age: 12
+        }
+    })
+</script>
+</html>
