@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .bg-red {
+        background-color: red;
+    }
+
+    .bg-pink {
+        background-color: pink;
+    }
+
+    .fontsize-10 {
+        font-size: 20px;
+    }
+
+    .fontsize-20 {
+        font-size: 40px;
+    }
+
+    .fontsize-30 {
+        font-size: 60px;
+    }
+    div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid green;
+    }
+</style>
+<script type="text/javascript" src="./js/vue.js"></script>
+<body>
+    <div id="root">
+        <!-- 绑定class样式--字符串写法，适用于：样式的类名不确定，需要动态指定 -->
+        <div :class="red">hello</div>
+        <!-- 绑定class样式--数组写法，适用于：要绑定的样式个数不确定、名字也不确定 -->
+        <div :class="classArr">hello</div>
+        <!-- 绑定class样式--对象写法，适用于：要绑定的样式个数确定、名字也确定，但要动态决定用不用 -->
+        <div :class="classObj">hello</div>
+
+        <div :style="styleObj">hello</div>
+        <div :style="styleArr">hello</div>
+    </div>
+</body>
+<script type="text/javascript">
+    const vm = new Vue({
+        el: '#root',
+        data: {
+            red: 'bg-red ',
+            classArr: ['bg-pink', 'fontsize-20'],
+            classObj: {
+                'bg-pink': false,
+                'fontsize-30': true
+            },
+            styleObj: {
+                fontSize: 60+'px',
+            },
+            styleArr: [
+                {
+                    fontSize: 60+'px',
+                },
+                {
+                    backgroundColor: 'skyblue',
+                },
+            ]
+        },
+        methods: {
+
+        }
+    })
+</script>
+</html>
