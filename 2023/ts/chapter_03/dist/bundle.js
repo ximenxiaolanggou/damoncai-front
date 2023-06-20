@@ -1,0 +1,1 @@
+console.log(3),console.log(12),console.log(Promise);

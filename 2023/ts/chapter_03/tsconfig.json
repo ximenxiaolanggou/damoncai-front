@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    // 全局严格检测总开关，默认false
+    "strict": false,
+    // 指定ts被编译为的ES版本
+    "target": "ES6",
+    // 指定要使用模块化的规范
+    "module": "ES6",
+  }
+}
